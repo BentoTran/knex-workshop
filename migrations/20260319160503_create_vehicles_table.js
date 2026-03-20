@@ -11,7 +11,7 @@ exports.up = function(knex) {
         table.string('color', 50);
         table.integer('mpg', 50);
         table.integer('models_id').unsigned().notNullable();
-        table.foreign('models_id').references(`models.id`);
+        table.foreign('models_id').references(`models.id`)
     })
 };
 
